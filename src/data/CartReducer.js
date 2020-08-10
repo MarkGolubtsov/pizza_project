@@ -1,4 +1,4 @@
-import { ActionTypes } from "./Types";
+import { ActionTypes } from './types';
 
 export const CartReducer = (storeData, action) => {
 
@@ -28,7 +28,7 @@ export const CartReducer = (storeData, action) => {
 
                         // const {id, name, cost, weight, path} = t;
                         // const svg = require(`../../${path}`);
-                        // let pizzaImg = document.createElement("img");
+                        // let pizzaImg = document.createElement('img');
                         // pizzaImg.setAttribute('src', {svg} );
 
 

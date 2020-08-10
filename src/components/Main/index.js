@@ -1,9 +1,9 @@
 import React from 'react';
-import "./style.sass";
+import './style.sass';
 
 
-export function Main(){
-    return <div className="main">
+export function Main() {
+    return <div className='main'>
 
         <h1><span>ИСТОРИЯ</span> В КАЖДОМ <br/> КУСОЧКЕ ПИЦЦЫ</h1>
         <p>

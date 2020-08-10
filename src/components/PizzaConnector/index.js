@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { addToCart_RemoveFromCart, updateCart, clearCart } from "../../data/CartActionCreators";
-import { connect } from "react-redux";
-import { loadData } from "../../data/ActionCreators";
-import { DataTypes } from "../../data/Types";
-import { PizzaConstructor } from "../PizzaConstructor";
+import React, { Component } from 'react';
+import { addToCart_RemoveFromCart, updateCart, clearCart } from '../../data/CartActionCreators';
+import { connect } from 'react-redux';
+import { loadData } from '../../data/ActionCreators';
+import { DataTypes } from '../../data/types';
+import { PizzaConstructor } from '../PizzaConstructor';
 
 
 const mapStateToProps = (dataStore) => ({

@@ -1,8 +1,8 @@
 import React from 'react';
-import "./style.sass";
+import './style.sass';
 
-export function About(){
-    return <div className="about">
+export function About() {
+    return <div className='about'>
         <h1>Добро пожаловать в Pizzeria Belarus!</h1>
         <p>Pizzeria – сеть пиццерий №1 в мире по данным глобальных розничных продаж.
             <br/>
@@ -15,10 +15,10 @@ export function About(){
             <li>готовит более 400 000 000 пицц в год</li>
         </ul>
         <p>Сегодня <b>Pizzeria</b> BELARUS это:</p>
-<div className="pizzeria">
-    <div className="description"><h1>27</h1> <p>пиццерий</p></div>
-    <div className="description"><h1>5 регионов </h1><p>Минск, Брест, Гродно, Гомель, Могилёв</p></div>
-    <div className="description"><h1>900+</h1><p>сотрудников</p></div>
-</div>
+        <div className='pizzeria'>
+            <div className='description'><h1>27</h1> <p>пиццерий</p></div>
+            <div className='description'><h1>5 регионов </h1><p>Минск, Брест, Гродно, Гомель, Могилёв</p></div>
+            <div className='description'><h1>900+</h1><p>сотрудников</p></div>
+        </div>
     </div>
 }

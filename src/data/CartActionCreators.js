@@ -1,4 +1,4 @@
-import { ActionTypes} from "./Types";
+import { ActionTypes} from './types';
 
 export const addToCart_RemoveFromCart = (topping) => ({
     type: ActionTypes.CART_ADD_REMOVE,
