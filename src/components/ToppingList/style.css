@@ -1,0 +1,18 @@
+.toppingList {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+.toppingList img {
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+.toppingList .toppings {
+  margin: 10px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*# sourceMappingURL=style.css.map */

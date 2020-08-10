@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+header {
+  height: 80px;
+  width: 100%;
+}
+header div {
+  display: inline-block;
+}
+header .breadcrumbs {
+  width: 100%;
+}
+header Select, header #demo-simple-select-label, header #demo-simple-select, header .menuItem {
+  font-family: "Open Sans Condensed";
+}
+header img {
+  height: 50px;
+  margin-right: 10px;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  opacity: 0.7;
+  margin-left: 10px;
+  font-size: x-large;
+  font-family: "Amatic SC";
+}
+header h1, header h2 {
+  cursor: pointer;
+  position: relative;
+}
+header h1:after, header h2:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+header h1:hover:after, header h2:hover:after {
+  width: 100%;
+}
+header h1 a:focus:after, header h2 a:focus:after {
+  width: 100%;
+}
+header .cities {
+  margin-top: auto;
+  margin-right: 50px;
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
