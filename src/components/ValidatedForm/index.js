@@ -1,6 +1,6 @@
-// import React, { Component } from "react";
-// import { ValidationError } from "../ValidationError";
-// import { GetMessages } from "../ValidationMessages";
+// import React, { Component } from 'react';
+// import { ValidationError } from '../ValidationError';
+// import { GetMessages } from '../ValidationMessages';
 //
 // export class Index extends Component {
 //
@@ -38,10 +38,10 @@
 //
 //     renderElement = (modelItem) => {
 //         const name = modelItem.name || modelItem.label.toLowerCase();
-//         return <div className="form-group" key={ modelItem.label }>
+//         return <div className='form-group' key={ modelItem.label }>
 //             <label>{ modelItem.label }</label>
 //             <ValidationError errors={ this.state.validationErrors[name] } />
-//             <input className="form-control" name={ name } ref={ this.registerRef }
+//             <input className='form-control' name={ name } ref={ this.registerRef }
 //                    { ...this.props.defaultAttrs } { ...modelItem.attrs } />
 //         </div>
 //     };
@@ -49,14 +49,14 @@
 //     render() {
 //         return <React.Fragment>
 //             { this.props.formModel.map(m => this.renderElement(m))}
-//             <div className="text-center">
-//                 <button className="btn btn-secondary m-1"
+//             <div className='text-center'>
+//                 <button className='btn btn-secondary m-1'
 //                         onClick={ this.props.cancelCallback }>
-//                     { this.props.cancelText || "Cancel" }
+//                     { this.props.cancelText || 'Cancel' }
 //                 </button>
-//                 <button className="btn btn-primary m-1"
+//                 <button className='btn btn-primary m-1'
 //                         onClick={ this.handleSubmit }>
-//                     { this.props.submitText || "Submit"}
+//                     { this.props.submitText || 'Submit'}
 //                 </button>
 //             </div>
 //         </React.Fragment>

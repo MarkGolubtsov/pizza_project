@@ -1,13 +1,11 @@
-import React from "react";
-import "./style.sass";
+import React from 'react';
+import './style.sass';
 
 export function Button(props) {
 
-
-
-    return(
-        <div className="button">
-        <button className="button_consructor_pizza">собрать пиццу</button>
+    return (
+        <div className='button'>
+            <button className='button_consructor_pizza'>собрать пиццу</button>
         </div>
     )
 }
