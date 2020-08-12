@@ -24,14 +24,6 @@ export const CartReducer = (storeData, action) => {
                 newStore.cart = [...newStore.cart, action.payload];
                 newStore.cart = newStore.cart.map(item => {
                     if (item.topping.id === t.id) {
-
-
-                        // const {id, name, cost, weight, path} = t;
-                        // const svg = require(`../../${path}`);
-                        // let pizzaImg = document.createElement('img');
-                        // pizzaImg.setAttribute('src', {svg} );
-
-
                         newStore.cartCost+= item.topping.cost ;
                         return action.payload;
                     } else {
@@ -42,8 +34,8 @@ export const CartReducer = (storeData, action) => {
             }
             return newStore;
 
-
-
+        case ActionTypes.CART_CLEAR:
+            return { ...storeData, cart: [],  cartCost: 2};
 
         default:
             return storeData || {};

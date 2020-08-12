@@ -8,6 +8,8 @@ import withHeader from './hoc/withHeader';
 import {About} from './components/About';
 import {Main} from './components/Main';
 import {Contacts} from './components/Contacts';
+import {Thanks} from "./components/Thanks";
+import {CheckoutConnector} from "./components/CheckoutConnector";
 
 function App() {
     return (
@@ -18,7 +20,8 @@ function App() {
                     <Route path='/about' component={withHeader(About)}/>
                     <Route path='/contacts' component={withHeader(Contacts)}/>
                     <Route path='/constructor' component={withHeader(PizzaConnector)}/>
-                    <Route path='/checkout' render={() => <>check out</>}/>
+                    <Route path='/checkout' component={CheckoutConnector}/>
+                    <Route path='/checkout/thanks' component={Thanks}/>
                 </Switch>
             </Router>
         </Provider>

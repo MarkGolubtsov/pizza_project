@@ -14,10 +14,16 @@ export class CartDetailsRows extends Component {
                     <td>основа для пиццы</td>
                     <td>2.00</td>
                 </tr>
-                {cart.map(({id, name, cost}) =>
-                    <tr key={id}>
-                        <td>{name}</td>
-                        <td>{cost.toFixed(2)}</td>
+                {/*{cart.map(({id, name, cost}) =>*/}
+                    {/*<tr key={id}>*/}
+                        {/*<td>{name}</td>*/}
+                        {/*<td>{cost}</td>*/}
+                    {/*</tr>*/}
+                {/*)}*/}
+                {cart.map(item =>
+                    <tr key={item.topping.id}>
+                        <td>{item.topping.name}</td>
+                        <td>{item.topping.cost.toFixed(2)}</td>
                     </tr>
                 )}
                 <tr>
