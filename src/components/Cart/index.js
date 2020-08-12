@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import {CartDetailsRows} from '../CartDetailsRow';
 import './style.sass';
-import {Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
 
 export class Cart extends Component{
+
+    continue =() => {
+        this.props.history.push("/checkout");
+    };
+
     render() {
         return <div className='m-3'>
             <h2 className='text-center'>Ваша пицца:</h2>
@@ -22,8 +27,8 @@ export class Cart extends Component{
             </table>
 
             <div className='text-center'>
-                <Link  to='/checkout'>
-                    Продолжить
+                <Link to = '/checkout' >
+                   Продолжить
                 </Link>
             </div>
 

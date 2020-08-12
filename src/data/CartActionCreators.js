@@ -15,3 +15,4 @@ export const updateCart = (topping) => ({
 export const clearCart = () => ({
     type: ActionTypes.CART_CLEAR
 })
+
