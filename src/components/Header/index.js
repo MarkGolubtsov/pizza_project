@@ -65,7 +65,7 @@ export function Header() {
                     value={city}
                     onChange={handleChange}>
                     {cities.map((city, index) =>
-                        <MenuItem key={index+1} className='menuItem' value={city.value}>
+                        <MenuItem key={index + 1} className='menuItem' value={city.value}>
                             {city.city}
                         </MenuItem>)}
                 </Select>
