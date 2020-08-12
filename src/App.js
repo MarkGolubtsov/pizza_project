@@ -20,8 +20,8 @@ function App() {
                     <Route path='/about' component={withHeader(About)}/>
                     <Route path='/contacts' component={withHeader(Contacts)}/>
                     <Route path='/constructor' component={withHeader(PizzaConnector)}/>
-                    <Route path='/checkout' component={CheckoutConnector}/>
-                    <Route path='/checkout/thanks' component={Thanks}/>
+                    <Route exact path='/checkout' component={CheckoutConnector}/>
+                    <Route exact path='/checkout/thanks' component={Thanks}/>
                 </Switch>
             </Router>
         </Provider>

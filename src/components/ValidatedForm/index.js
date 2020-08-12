@@ -12,6 +12,15 @@ export class ValidatedForm extends Component {
         this.formElements = {};
     }
 
+    submit = () => {
+        this.props.clearCart();
+        this.props.history.push('/checkout/thanks');
+    };
+
+    cancel = () => {
+        this.props.history.push('/constructor');
+    };
+
     handleSubmit = () => {
         this.setState( state =>{
             const newState = { ...state, validationErrors: {} };
@@ -24,7 +33,7 @@ export class ValidatedForm extends Component {
         }, () => {
             if (Object.keys(this.state.validationErrors).length === 0) {
                 const data = Object.assign(...Object.entries(this.formElements)
-                    .map(e => ({[e[0]]: e[1].value})) )
+                    .map(e => ({[e[0]]: e[1].value})) );
                 this.submit();
             }
         });
@@ -47,15 +56,6 @@ export class ValidatedForm extends Component {
                    { ...this.props.defaultAttrs } { ...modelItem.attrs }
             />
         </div>
-    };
-
-    submit = () => {
-        this.props.clearCart();
-        this.props.history.push("/checkout/thanks");
-    };
-
-    cancel = () => {
-        this.props.history.push("/constructor");
     };
 
     render() {
