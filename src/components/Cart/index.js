@@ -5,10 +5,6 @@ import {Link, Route} from 'react-router-dom';
 
 export class Cart extends Component{
 
-    continue =() => {
-        this.props.history.push("/checkout");
-    };
-
     render() {
         return <div className='m-3'>
             <h2 className='text-center'>Ваша пицца:</h2>
@@ -31,7 +27,6 @@ export class Cart extends Component{
                    Продолжить
                 </Link>
             </div>
-
         </div>
     }
 }

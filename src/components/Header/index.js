@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.sass';
 import logo from '../../assets/images/logo.svg'
 import {Link} from 'react-router-dom';
@@ -64,8 +64,8 @@ export function Header() {
                     id='demo-simple-select'
                     value={city}
                     onChange={handleChange}>
-                    {cities.map(city =>
-                        <MenuItem className='menuItem' value={city.value}>
+                    {cities.map((city, index) =>
+                        <MenuItem key={index+1} className='menuItem' value={city.value}>
                             {city.city}
                         </MenuItem>)}
                 </Select>
