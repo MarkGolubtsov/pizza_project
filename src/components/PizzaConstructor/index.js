@@ -17,6 +17,7 @@ export class PizzaConstructor extends Component {
 
                 <div  className='col-4 p-2' >
                     <ToppingList toppings={ this.props.toppings }
+                                 cart = {this.props.cart ? this.props.cart : []}
                                  handleAddToCart_RemoveFromCart={ this.handleAddToCart_RemoveFromCart }/>
                 </div>
                 <div className='col-8 p-2'>
