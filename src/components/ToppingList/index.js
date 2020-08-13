@@ -3,6 +3,14 @@ import React, {Component} from 'react';
 import './style.sass';
 
 export class ToppingList extends Component {
+
+    isToppingInCart = (id) => {
+        return this.props.cart.find(({topping}) => {
+            return topping.id === id;
+        })
+    }
+
+
     render() {
         const {toppings, handleAddToCart_RemoveFromCart} = this.props;
 
@@ -15,7 +23,7 @@ export class ToppingList extends Component {
                     const {id, path, name, cost, weight} = t;
                     const svg = require(`../../${path}`);
 
-                    return <button className='toppings card  bg-light' key={t.id}
+                    return <button className={`toppings card  bg-light ${this.isToppingInCart(t.id) ? 'active' : ''}`} key={t.id}
                                    onClick={() => handleAddToCart_RemoveFromCart(t)}>
                         <img src={svg} alt={id}/>
                         <div><p>
