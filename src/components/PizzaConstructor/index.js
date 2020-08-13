@@ -9,21 +9,22 @@ export class PizzaConstructor extends Component {
 
     handleAddToCart_RemoveFromCart = (...args) => {
         this.props.addToCart_RemoveFromCart(...args);
-    }
+    };
 
     render() {
         return <div className='container-fluid'>
             <div className='row'>
-                <div className='col-4 p-2'>
+
+                <div  className='col-4 p-2' >
                     <ToppingList toppings={ this.props.toppings }
                                  handleAddToCart_RemoveFromCart={ this.handleAddToCart_RemoveFromCart }/>
                 </div>
                 <div className='col-8 p-2'>
 
-                    <div className='pizza  p-2 row-cols-sm-2'>
+                    <div className='pizza row-cols-2'>
                         <PizzaView cart = {this.props.cart ? this.props.cart : []}/>
                     </div>
-                    <div className='check  p-2 row-cols-sm-2'>
+                    <div className='check'>
                         <Cart {...this.props}/>
                     </div>
                 </div>

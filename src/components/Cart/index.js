@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export class Cart extends Component{
 
     render() {
-        return <div className='m-3'>
+        return <div>
             <h2 className='text-center'>Ваша пицца:</h2>
             <table className='table table-bordered table-striped'>
                 <thead>
