@@ -1,11 +1,18 @@
 .check {
-  height: 50%;
   display: grid;
   justify-items: center;
 }
 
-.pizza {
-  height: 50%;
+@media screen and (max-width: 715px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  .row {
+    margin-right: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

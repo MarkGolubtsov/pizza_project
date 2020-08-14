@@ -14,5 +14,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.toppingList .active {
+  background-color: lightyellow !important;
+}
+
+@media screen and (max-width: 1350px) {
+  .toppingList {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 690px) {
+  .toppingList {
+    width: 200px;
+  }
+  .toppingList img {
+    height: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

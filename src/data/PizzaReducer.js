@@ -10,4 +10,4 @@ export const PizzaReducer = (storeData, action) => {
         default:
             return storeData || {};
     }
-}
+};
