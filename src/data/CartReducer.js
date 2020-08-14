@@ -1,22 +1,17 @@
 import {ActionTypes} from './types';
 
-export const CartReducer = (storeData, action) => {
-
-    const newStore = {cart: [], cartCost: 2, ...storeData};
-
-    switch (action.type) {
-
+const initState = {cart: [], cartCost: 2};
+export const CartReducer = (state, action) => {
+    state = {...initState, ...state};
+    switch (action.type){
         case ActionTypes.CART_ADD_REMOVE:
-            return processCartAddRemove(newStore, action);
-
+            return processCartAddRemove(state, action);
         case ActionTypes.CART_CLEAR:
-            return {...storeData, cart: [], cartCost: 2};
-
+            return {...initState};
         default:
-            return storeData || {};
+            return state;
     }
 };
-
 
 const processCartAddRemove = (state, action) => {
     const t = action.payload.topping;
@@ -25,7 +20,6 @@ const processCartAddRemove = (state, action) => {
         state.cartCost -= existing.topping.cost;
         state.cart = state.cart.filter(item => item !== existing);
         return state;
-
     } else {
         state.cart = [...state.cart, action.payload];
         state.cart = state.cart.map(item => {
