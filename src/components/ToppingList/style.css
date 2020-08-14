@@ -15,7 +15,7 @@
   grid-template-columns: 1fr 1fr;
 }
 .toppingList .active {
-  background-color: lavender !important;
+  background-color: lightyellow !important;
 }
 
 @media screen and (max-width: 1350px) {
