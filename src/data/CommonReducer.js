@@ -6,4 +6,4 @@ export const CommonReducer = (...reducers) => (storeData, action) => {
         }
     }
     return storeData;
-}
+};
